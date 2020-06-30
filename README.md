@@ -6,7 +6,6 @@
 1. float
 2. postion不为static或者relative
 3. display:inline-block、flex、table-cell等
-4. 
 ## JavaScript：
 ### 继承
 ### 原型链
