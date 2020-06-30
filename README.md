@@ -1,11 +1,11 @@
 ## HTML&CSS：
 
-### BFC
+#### BFC
 
 1. 独立的容器，容器里面的子元素不会影响到外面的元素，反之亦然
 2. BFC会将浮动元素计入高度
 
-### 创建BFC
+#### 创建BFC
 
 1. float
 2. postion不为static或者relative
@@ -30,6 +30,20 @@
 
 #### new实现
 
+```javascript
+function _new(){
+    /* 新建对象 */
+	var obj = {}; //new Object()
+    /* 获取构造函数 */
+    Constructor = [].shift.call(arguments);
+    /* 链接原型 */
+    obj.__proto__ = Constructor.prototype;
+    /* 改变构造函数的指向 */ 
+    var result = Constructor.apply(obj,arguments);
+    return typeof result === 'Object' ? result : obj;
+}
+```
+
 #### 防抖节流
 
 #### let, var, const 区别
@@ -41,9 +55,9 @@
 
 #### 暂时性死区
 
-当程序的控制流程在新的作用域（module function 或 block 作用域）进行实例化时，在此作用域中用let/const声明的变量会先在作用域中被创建出来，但因此时还未进行词法绑定，所以是不能被访问的，如果访问就会抛出错误。因此，在这运行流程进入作用域创建变量，到变量可以被访问之间的这一段时间，就称之为暂时死区。
+​	当程序的控制流程在新的作用域（module function 或 block 作用域）进行实例化时，在此作用域中用let/const声明的变量会先在作用域中被创建出来，但因此	时还未进行词法绑定，所以是不能被访问的，如果访问就会抛出错误。因此，在这运行流程进入作用域创建变量，到变量可以被访问之间的这一段时间，就称之	为暂时死区。
 
-#### event loop；
+#### event loop
 
 1. Event Loop执行一次，从task队列中拉出一个task执行
 2. Event Loop检查microtask队列是否为空，依次执行直至清空队列
@@ -54,8 +68,8 @@
 
 #### promise并行执行和顺序执行
 
-顺序：递归调用、await/async
-并行: promise.all()
+​	顺序：递归调用、await/async
+​	并行：promise.all()
 
 #### async/await的优缺点
 
@@ -65,6 +79,9 @@
 
 #### 闭包
 
+1. 定义：闭包是指有权访问另一个函数作用域中的变量的函数
+2. 
+
 #### 垃圾回收和内存泄漏
 
 #### 数组方法
@@ -73,9 +90,9 @@
 
 #### 数组扁平化
 
-事件委托、事件监听、事件模型
+#### 事件委托、事件监听、事件模型
 
-## Vue:
+## Vue
 
 #### vue数据双向绑定原理
 
@@ -116,3 +133,5 @@
 #### 减少http请求的方式
 
 #### webpack如何配置大型项目
+
+## React
