@@ -54,17 +54,13 @@
 ### vue dom diff
 ### vuex
 ### vue-router
-
 ## 网络：
-
 ### 浏览从输入网址到回车发生了什么；
 ### 前端安全（CSRF、XSS）
 ### 前端跨域
 ### 浏览器缓存、cookie, session, token, localstorage, sessionstorage；
 ### TCP连接(三次握手, 四次挥手)
-
 ## 性能相关
-
 ### 图片优化的方式
 ### 500 张图片，如何实现预加载优化
 ### 懒加载具体实现
