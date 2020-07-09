@@ -99,7 +99,11 @@ export const mutations = {
 }
 ```
 
-#### 暂未解决的问题：
+#### 服务端Cookies的问题
 
-​	1.刷新后通过axios获取的数据在vuex中computed后并不会更新视图
+在用jwt做登陆持久化和路由拦截的时候，可能在Server端拿不到cookies的值，也就验证不了是否有token存在，解决方法有：
 
+1. 使用中间件，把客户端的cookies注入到服务端，具体方法google一下（不怎么好用）。
+2. 最好的办法，使用插件cookie-universal-nuxt来管理Cookies
+
+#### 待续......
